@@ -73,7 +73,7 @@ dotnet add package AspNetCoreHttpKit
 
 ```csharp
 // With StructLog (automatic detection)
-builder.Services.AddStructLog(builder.Configuration); // register StructLog first
+builder.Services.AddStructLog(); // register StructLog first
 builder.Services.AddAspNetCoreHttpKit(builder.Configuration); // HttpKit detects it automatically
 
 // Without StructLog — falls back to ILogger automatically
