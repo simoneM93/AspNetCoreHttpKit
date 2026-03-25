@@ -7,10 +7,6 @@ using System.Text.Json;
 
 namespace AspNetCoreHttpKit.Tests
 {
-    // ----------------------------------------------------------
-    // Mock HTTP handler — simula risposte HTTP senza rete reale
-    // ----------------------------------------------------------
-
     internal sealed class MockHttpMessageHandler : HttpMessageHandler
     {
         private readonly HttpResponseMessage _response;
@@ -37,10 +33,6 @@ namespace AspNetCoreHttpKit.Tests
             return new HttpResponseMessage(HttpStatusCode.OK);
         }
     }
-
-    // ----------------------------------------------------------
-    // Null IHttpLogger — per i test, non logga nulla
-    // ----------------------------------------------------------
 
     internal sealed class NullHttpLogger : IHttpLogger
     {
