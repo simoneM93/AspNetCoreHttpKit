@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AspNetCoreHttpKit.Tests/AspNetCoreHttpKit.Tests.csproj" />
+  <Project Path="AspNetCoreHttpKit/AspNetCoreHttpKit.csproj" />
+</Solution>
